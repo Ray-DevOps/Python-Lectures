@@ -36,7 +36,7 @@ class Employee:                                                 # We create a cl
         self.email = f"{first_name}.{last_name}@companyltd.com"
 
     def full_name(self):                                        # Within that class we create a method called full_name
-        return f"{self.first_name} {self.last_name}"            # to return the employee's full name
+        return f"{self.first_name} {self.last_name}"            # This method is a function that returns the employee's full name
 
 
 employee1 = Employee("Jenny", "Corey", 50000)
