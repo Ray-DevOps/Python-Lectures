@@ -1,9 +1,9 @@
 # Inheritance allows a sub-class to inherit attributes and methods from a parent class.
 # As such the sub-class would simply inherit all the functionalities of the parent class, thereby avoiding the need
-# to re-write code.
+# to re-write the entire code.
 
 # The sub-class can then add or modify attributes and methods without affecting the functionality of the parent class.
-# Assuming that we have an "Employee" class already created with all it's methods and now we want to create a sub-class
+# Assuming that we have an "Employee" class already created with all its methods and now we want to create a sub-class
 # say for developers
 
 
@@ -107,8 +107,8 @@ print(developer1.prog_lang)      ------->    Python
 
 
 # NOTE: We can also use the super() Function to make the child class inherit all the methods and properties from its parent.
-# So instead of doing Employee.__init__(self, first_name, last_name, pay) (as on line 96), we can use the super() function as
-# follows: super().__init__(first_name, last_name, pay). The super() function doesn't require the self-parameter.
+# So instead of doing "Employee.__init__(self, first_name, last_name, pay)" (as on line 96), we can use the super() function as
+# follows: "super().__init__(first_name, last_name, pay)". The super() function doesn't require the self-parameter.
 
 
 
@@ -117,7 +117,7 @@ print(developer1.prog_lang)      ------->    Python
 
 
 # We can also introduce loops and if/else statements when defining attributes within a method. Following from our examples above,
-# we can create another method called Manager, and introduce a new attribute called "subordinates" which indicates the number of
+# We can create another method called Manager, and introduce a new attribute called "subordinates" which indicates the number of
 # people who report to the manager.
 
 
