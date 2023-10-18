@@ -6,7 +6,7 @@ class User:
     self.user_id = user_id
     self.username = username
     self.followers = 0             # We set default values for followers and following to zero
-    self.following = 0             # When setting default values, we don't need to include them inside the init function
+    self.following = 0             # When setting default values to 0, we don't need to include them inside the init function
 
   def follow(self, user):
       user.followers += 1
