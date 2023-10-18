@@ -27,6 +27,20 @@ print(john.age)            ---------->        36
 
 
 
+#                 Specifying Data Types in the __init__() Function
+            --------------------------------------------------------------
+
+# With the __init__ function, you can optionally impose the data types that must be passed as arguments when creating an object from class.
+# That way, if the wrong data type is entered when creating an object, it would be rejected by Python.
+
+class People:
+  def __init__(self, name: str, age: int, profession: int, quantity=0):      # By specifying "str" after the name and profession parameter, it means only string data type 
+    self.name = name                                                         # can be entered for those parameters. Also, the "int" specification means only an
+    self.age = age                                                           # integer would be accepted for age. We could also "float" if we expect decimal value entries.
+    self.profession = profession                                             #  In a case where we have a default value such as with quantity set to 0
+                                                                             # we don't need to specify a data type as the user will automatically be forced to enter an integer
+
+
 #                 The __str__() Function
             ------------------------------------------
 
