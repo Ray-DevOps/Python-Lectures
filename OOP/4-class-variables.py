@@ -1,8 +1,10 @@
-# INSTANCE VARIABLES VERSUS CLASS VARIABLES
+
+                   # INSTANCE VARIABLES VERSUS CLASS VARIABLES
+                  ---------------------------------------------------
 
 # - Instance variables are those set individually for each instance
 # - Instance variables are unique for each instance, such as name, email, pay
-# - Class variables are those shared by all instance of a Class
+# - Class variables are those shared by all instances of the class
 # - Class variables are the same for each instance. e.g. bonus rate
 
 
