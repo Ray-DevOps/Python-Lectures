@@ -105,6 +105,14 @@ print(developer1.prog_lang)      ------->    Python
 
 
 
+
+# NOTE: We can also use the super() Function to make the child class inherit all the methods and properties from its parent.
+# So instead of doing Employee.__init__(self, first_name, last_name, pay) (as on line 96), we can use the super() function as
+# follows: super().__init__(first_name, last_name, pay). The super() function doesn't require the self-parameter.
+
+
+
+
 ###################################################### ILLUSTRATION 4 #########################################################
 
 
