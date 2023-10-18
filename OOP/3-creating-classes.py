@@ -6,7 +6,7 @@ class User:
     self.user_id = user_id
     self.username = username
     self.followers = 0             # We set default values for followers and following to zero
-    self.following = 0             # When setting default values to 0, we don't need to include them inside the init function
+    self.following = 0             # When setting default values, we don't need to include them inside the init function
 
   def follow(self, user):
       user.followers += 1
@@ -28,15 +28,15 @@ print(user_2.following)  ---> 0
 Illustration #2
 ------------------------
 
-class Employee:                                                 # We create a class called "Employee"
+class Employee:                                                            # We create a class called "Employee"
     def __init__(self, first_name, last_name, pay):
         self.first_name = first_name
         self.last_name = last_name
         self.pay = pay
-        self.email = f"{first_name}.{last_name}@companyltd.com"
-
-    def full_name(self):                                        # Within that class we create a method called full_name
-        return f"{self.first_name} {self.last_name}"            # This method is a function that returns the employee's full name
+        self.email = f"{first_name}.{last_name}@companyltd.com"            # Here we're setting default values for email, as such not 
+                                                                           # included in the __init__ function
+    def full_name(self):                                                   # Within that class we create a method called full_name
+        return f"{self.first_name} {self.last_name}"                       # This method is a function that returns the employee's full name
 
 
 employee1 = Employee("Jenny", "Corey", 50000)
