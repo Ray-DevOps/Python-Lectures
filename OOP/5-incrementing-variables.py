@@ -23,8 +23,5 @@ print(Employee.num_of_employees)  ---------------> 0            # We haven't cre
 employee1 = Employee("jenny", "corey", 50000)                   # Here we create our first employee "Jenny Corey"                 
 employee2 = Employee("roger", "moore", 60000)                   # Here we create our second employee "Roger Moore"  
 
-print(employee1.bonus_pay())                                     
-print(employee2.bonus_pay())
-
 print(Employee.num_of_employees)  ---------------> 2            # So the variable value now is 2 (two objects created with the Class)
 
