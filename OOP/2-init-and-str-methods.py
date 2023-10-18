@@ -41,6 +41,37 @@ class People:
                                                                              # we don't need to specify a data type as the user will automatically be forced to enter an integer
 
 
+
+#                 Ensuring Non-Negative Arguments in the __init__() Function
+            --------------------------------------------------------------------
+
+# For arguments that take integer or float values, we can ensure that only positive integers and floats are used when passing arguments 
+# to create an object from the class. We can achieve this by using the "assert" keyword as follows.
+
+class People:
+  def __init__(self, name, age, profession, quantity):      
+    
+    assert age >= 0                                                          # These ensures that the values of age and quantity must always be greater than or equal to 0
+    assert quantity >= 0
+    self.name = name                                                         
+    self.age = age                                                           # The two assert statements can be combined to one as follows: assert (age >= 0 and quantity >= 0)
+    self.profession = profession       
+
+# The "assert" keyword can be used to impose any condition that must be met when creating objects. Also, when using the assert keyword, you can optionally pass a message
+# to the user to explain why their entry is being rejected. You pass a message by adding a comma, followed by a string or formatted string as follows.
+
+class People:
+  def __init__(self, name, age, profession, quantity):      
+    
+    assert age >= 0, f"{age} entered is negative. Age cannot be less than zero"                                                        
+    self.name = name                                                         
+    self.age = age                                                           
+    self.profession = profession       
+
+
+
+              
+              
 #                 The __str__() Function
             ------------------------------------------
 
