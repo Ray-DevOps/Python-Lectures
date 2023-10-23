@@ -63,3 +63,22 @@
 # -- To call an attribute from an object, we do object.attribute e.g. nissan.color
 
 # -- To create a Class, we use the Class keyword, followed by the name of the class, the column, then our block of code (indented)
+
+
+#                        CLASS METHODS VS STATIC METHODS VS REGULAR METHODS
+
+# Regular methods automatically pass the instance as the first argument and call it "self"
+
+# Class methods automatically pass the class as the first argument and call it "cls"
+
+# Static methods don't pass anything automatically (neither the instance nor the class). They are just like regular functions
+
+# but are included in the class because they have a logical connection with the class, but probably doesn't depend on any
+
+# specific instance or class variable.
+
+
+
+
+
+
