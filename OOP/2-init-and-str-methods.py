@@ -111,8 +111,12 @@ class People:
 john = People("john thomas", 36, "carpenter")
 anita = People("anita kelly", 27, "receptionist")
 
-john.intro_method()      ---------->   Hello, my name is john thomas, I am 36 years old
-anita.intro_method()     ---------->   Hello, my name is anita kelly, I am 27 years old
+
+john.intro_method()                    ---------->   Hello, my name is john thomas, I am 36 years old
+print(People.intro_method("john")      ---------->   Hello, my name is john thomas, I am 36 years old        # Alternative approach (using className.methodName)
+
+anita.intro_method()                   ---------->   Hello, my name is anita kelly, I am 27 years old
+print(People.intro_method("anita")     ---------->   Hello, my name is anita kelly, I am 27 years old        # Alternative approach (using className.methodName)
 
 
 
