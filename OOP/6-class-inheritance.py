@@ -167,6 +167,34 @@ manager1.print_subordinates()           ------->     amy carn
 
 
 
+########################################## INHERIT FROM A METHOD   #######################################################
+
+
+You can also extend the functionality of the method of a parent class inherited by a subclass. See example below
+
+class Dog:
+    def __init__(self):
+        self.temperament = "loyal"
+ 
+    def bark(self):
+        print("Woof, woof!")
+ 
+class Labrador(Dog):
+    def __init__(self):
+        super().__init__()
+        self.is_a_good_boy = True
+ 
+    def bark(self):
+        super().bark()                                       # This allows the Labrador class to inherit the bark method of the Dog class
+        print("Greetings, good sir. How do you do?")         # and then extend this functionality by printing the greeting
+
+
+sparky = Labrador()   
+sparky.bark()                 -------->                   Woof, woof!   
+                                                          Greetings, good sir. How do you do?
+
+
+
 ########################################## isinstance and issubclass #########################################################
 
 
