@@ -68,3 +68,48 @@ file2_list = data2.split("\n")
 result = [int(num) for num in file1_list if num in file2_list and num.isdigit() == True]
 
 print(result)
+
+
+
+###########################################################   DICTIONARY COMPREHENSION   ################################################################
+
+
+# Dictionary comprehension allows us to create a new dictionary from the values in a list or in a dictionary.
+
+new_dict = {new_key:new_value for each_item in original_list}
+
+
+# We could also create a new dictionary based on the values in an existing dictionary. Here, we would take the original dictionary, get hold of
+# all the items in the dictionary and split it into keys and values, and use them to create new key/value pairs.
+# Just like with list comprehension, we can apply conditions to dictionary comprehension.
+
+
+# Example 1:
+-------------------------
+
+# Suppose we're given a list of names and we want to create a dictionary with the name of each student in the list as key, and 
+# then a random score  (between 50 and 100) as the value, we can achieve that as follows:
+
+import  random
+
+names = ["Alex", "Beth", "Caroline", "Dave", "Eleanor", "Freddie"]
+
+student_scores = {name:random.randint(50, 100) for name in names}
+
+print(student_scores)           ---------------->          {'Alex': 86, 'Beth': 56, 'Caroline': 73, 'Dave': 62, 'Eleanor': 76, 'Freddie': 65}
+
+
+
+# Example 2:
+------------------------
+
+# Suppose you're given a dictionary (called result_dict) of student names and their scores, and you're asked to use dictionary comprehension
+# to create a new dictionary (called passed_students) of only those students with score of 65 and above.
+
+result_dict = {'Alex': 86, 'Beth': 56, 'Caroline': 73, 'Dave': 62, 'Eleanor': 76, 'Freddie': 65}
+
+passed_students = {name:result_dict[name] for name in result_dict if result_dict[name] >= 65}
+
+print(passed_students)          ---------------->              {'Alex': 86, 'Caroline': 73, 'Eleanor': 76, 'Freddie': 65}
+
+
