@@ -3,16 +3,17 @@
              --------------------------------
 
 # In this project, we create a simple project, we create a simple miles to KM converter GUI using Python TKinter.
-# We want the user to be able to enter miles (interger or float), click on a "calculate" button and get the
-# and get the equivalence in kilometers with a wording that says is equal to <the equivalence in km>
-# Please see the screenshout of what the final GUI looks like. See 
+# We want the user to be able to enter miles (integer or float), and click on a "calculate" button to get the
+# the equivalence in kilometers with wording that says is equal to <the equivalence in km>
+# Please see the screenshot of what the final GUI looks like. 
+# See the screenshot of the project outcome [here] (https://github.com/Ray-DevOps/Python-Notes/blob/main/GUI-with-Python-TKinter/miles-to-km-converter/miles-2-km.jpg)
 
 
 #                         SOLUTION
                --------------------------------
-from tkinter import *                                          # We import all the classes in the tkinter module since we would be needing a bunch of them
+from tkinter import *                                          # We import all the classes in the tkinter module since we would need a bunch of them
 
-window = Tk()                                                  # We create a window object from the window class and define the specifications if the GUI window
+window = Tk()                                                  # We create a window object from the window class and define the specifications of the GUI window
 window.minsize(width=500, height=300)
 window.title("Miles to km Converter")
 
@@ -28,7 +29,7 @@ response = Label(text="is equal to", font=("Arial", 16))
 response.place(x=140, y=90)
 
 
-input = Entry(width=10, font=("Arial", 18))                   # We a text entry field from the Entry class which allows the user to enter the amount of miles to be converted
+input = Entry(width=10, font=("Arial", 18))                   # We create a text entry field from the Entry class which allows the user to enter the number of miles to be converted
 input.place(x=200, y=40)
 
 
