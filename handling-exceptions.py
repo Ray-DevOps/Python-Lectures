@@ -1,11 +1,12 @@
 
-# There are 4 important keywords that come to play with it comes to handling exceptions.
+# There are 4 important keywords that come into play with regard to handling exceptions.
 # They are: "try", "except", "else", and "finally".
 
 # The "try" block lets you test a block of code for errors.
-# The "except" block lets you handle the error. It defines what should happen should the error occur.
-# The "else" block lets you execute code when there is no error. It defines what should happen if there is no error.
+# The "except" block lets you handle the error. It defines what should happen should the error occur. 
+# The "else" block lets you execute code when there is no error. It defines what should happen if there is no error. The else block is optional
 # The "finally" block defines what should happen regardless of the result of the try- and except blocks. (What should happen whether or not there is an error)
+# Both the "else" and the "finally" blocks are optional in error handling
 
                                           
 #                                                  ILLUSTRATION
