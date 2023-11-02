@@ -51,3 +51,35 @@ iss_position = (longitude, latitude)
 print(iss_position)              --------------->   ('6.7350', '12.6012')
 
 
+
+#                        USING API ENDPOINTS WITH PARAMETERS
+                  -------------------------------------------------
+
+# APIs also have parameters. API parameters allow you to provide an input when making an API request so that you can get different pieces
+# of data back (based on your input). 
+# Not all APIs allow you to provide parameters, as some APIs are very simple. Some parameters are optional, and some are madatory
+# The API documentation will normally guide you on how to structure your parameters.
+# The keys for the parameters must match the ones specified in the API.
+
+
+import requests 
+
+parameters = {
+    "lat": LATITUDE,
+    "lon": LONGITUDE
+}
+
+response = requests.get("https://api.sunrise-sunset.org/json", params=parameters)
+response.raise_for_status()
+
+data = response.json()
+
+print(data)         ---------->   {'results': {'sunrise': '6:51:26 AM', 'sunset': '4:35:44 PM', 'solar_noon': '11:43:35 AM', 'day_length': '09:44:18', 'civil_twilight_begin': '6:18:09 AM', 
+                                               'civil_twilight_end': '5:09:01 PM', 'nautical_twilight_begin': '5:38:42 AM', 'nautical_twilight_end': '5:48:27 PM', 
+                                               'astronomical_twilight_begin': '5:00:00 AM', 'astronomical_twilight_end': '6:27:10 PM'}, 'status': 'OK'}
+
+sunrise = data["results"]["sunrise"]
+sunset = data["results"]["sunset"]
+weather = (f"sunrise: {sunrise}, sunset: {sunset}")
+
+print(weather)     ---------->   sunrise: 6:51:26 AM, sunset: 4:35:44 PM
