@@ -55,11 +55,17 @@ print(iss_position)              --------------->   ('6.7350', '12.6012')
 #                        USING API ENDPOINTS WITH PARAMETERS
                   -------------------------------------------------
 
-# APIs also have parameters. API parameters allow you to provide an input when making an API request so that you can get different pieces
+# APIs also have parameters. API parameters allow you to provide inputs when making an API request so that you can get different pieces
 # of data back (based on your input). 
-# Not all APIs allow you to provide parameters, as some APIs are very simple. Some parameters are optional, and some are madatory
+# Not all APIs allow you to provide parameters, as some APIs are very simple. Some parameters are optional, and some are mandatory
 # The API documentation will normally guide you on how to structure your parameters.
 # The keys for the parameters must match the ones specified in the API.
+
+When you go to a site and generate the API URL like this https://opentdb.com/api.php?amount=10&type=boolean,
+                                                         ---------------------------
+# The actual API endpoint is everything before the question mark, then after the question mark we've got the parameters (separated by the '&' sign)
+# In the example above, we've got a parameter called "amount" (which is set to 10), and another parameter called type (which is set to boolean)
+
 
 
 import requests 
