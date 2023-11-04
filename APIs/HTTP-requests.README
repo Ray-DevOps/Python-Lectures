@@ -1,0 +1,24 @@
+
+
+# We use the "requests" module to make HTTP requests across the internet using the GET request
+# The GET requests allow us to get pieces of date from an external provider, such as an API provider
+# There are 3 other common types of requests.  POST, PUT, and DELETE.
+
+# We use the requests module to complete the GET, POST, PUT, and DELETE request as follows: 
+
+GET: requests.get(<parameters>)           # To get data from an external system. Data is received from the response we get back
+POST: requests.post(<parameters>)         # To post data to an external system. We're not interested in the response, apart from seeing a 200 response code
+PUT: requests.put(<parameters>)           # To update a piece of data in the external service
+DELETE: requests.delete(<parameters>)     # To delete a piece of data in the external service
+
+
+# Examples where we'll need to make POST requests include where:
+   # i. Using Google Sheets API to post your data into Google sheets
+   # ii. Using the twitter API to post a tweet
+
+# Examples where we'll need to make PUT requests include where:
+   # i. Using Google Sheets API to update values in your spreadsheets in Google sheets via a PUT request
+
+# Examples where we'll need to make DELETE requests include where:
+   # i. Using Facebook API to delete a Facebook post
+   # ii. Using the twitter API to delete a tweet
