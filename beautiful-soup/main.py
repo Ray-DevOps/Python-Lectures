@@ -85,13 +85,25 @@ print(section_heading.name)             ---------->       h3                    
 print(section_heading.get("class"))     ---------->       ['heading']                              # To get the value of the "class" attribute
 
 
+# We can also use CSS selectors to get hold of elements in the HTML code. The select_one() method will return the first matching
+# item, while select_all() will return all matching items.
+
+
+company_url = soup.select_one(selector="p a")                                                    # To get the first "a tag" which sits inside a "p tag" (first anchor_tag inside a paragraph)
+print(company_url)                    ---------->     <a href="https://www.appbrewery.co/">The App Brewery</a>
 
 
 
+# To use the CSS selector to select an element by ID, we use the # sign
+
+name = soup.select_one(selector="#name")
+print(name)                          ---------->     <h1 id="name">Angela Yu</h1>                # This picks the first element with the ID "name"
 
 
+# To use the CSS selector to select an element by class, we use .                         
 
-
+headings = soup.select(".heading")                                                               # This selects all elements with class "heading"
+print(headings)                      ---------->      [<h3 class="heading">Books and Teaching</h3>, <h3 class="heading">Other Pages</h3>]
 
 
 
