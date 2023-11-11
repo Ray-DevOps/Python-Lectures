@@ -44,6 +44,9 @@ print(soup.find_all(name="ul"))    ---------->           # This will print out a
 # Suppose you wanted to print only the texts in the anchor tags, you would loop through all the anchor tags, and use the
 # getText() method to print them out, as shown below.
 
+
+all_anchor_tags = soup.find_all(name="a")
+
 for tags in all_anchor_tags:
     print(tags.getText())      
     
@@ -58,6 +61,9 @@ for tags in all_anchor_tags:
 
 # Suppose you wanted to print only the links in the anchor tags, you would loop through all the anchor tags, and use the
 # get() method to print the "href" as the links are the href values:
+
+
+all_anchor_tags = soup.find_all(name="a")
 
 for tags in all_anchor_tags:
     print(tags.get("href"))      
