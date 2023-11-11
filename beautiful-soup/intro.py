@@ -4,6 +4,16 @@
 # that can be used to extract data from HTML, which is useful for web scraping. 
 
 # Web scraping is the process of extracting information from a website from the website's underlying HTML code. 
+# Note: Legally, you can only scrap data that is publicly available and not copyrighted.
+# Also, you can't scrape data that is behind authentication. This is because data behind authentication usually binds the users
+# to policies and terms of service, whereas users cannot be bound to policies with data that is readily available without authentication.
+
+# As a rule of thumb, if you come across a website that provides an API endpoint, it is always better to register and use the API
+# than to scrape their data directly.
+# Also, using Python loops to continuously scrape data can result in serious traffic on the website and affect human user experience
+
+# When you visit any website, to see the kind of data that you are not allow to scrape, add "/robots.txt" to the root of the URL.
+# For example https://www.linkedin.com/robots.txt will show you all the data categories that you can't scrape from linkedIn
 
 
 
