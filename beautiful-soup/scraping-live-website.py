@@ -39,7 +39,7 @@ for title in titles:
 title_list.reverse()
 
 with open('movies.txt','w', encoding="utf-8") as file:
-    for element in title_list:
-        file.write(element + "\n")
+    for title in title_list:
+        file.write(f"{title}\n")            --------->        movies.txt
 
 The output is the movies.txt file [here] (https://github.com/Ray-DevOps/Python-Notes/blob/main/beautiful-soup/movies.txt)
